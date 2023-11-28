@@ -6,6 +6,7 @@ import Navbar from './Component/Navbar/Navbar'
 
 import View from './Component/Body/view/View'
 import Register from './Component/Body/register/Register'
+import Edit from './Component/Body/edit/Edit'
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route  path="/" Component={Home} />
         <Route  path="/about" Component={About} />
         <Route path="/view/:id" Component={View}/>
+        <Route path="/edit/:id" Component={Edit}/>
         <Route  path="/register" Component={Register} />
         
       </Routes>

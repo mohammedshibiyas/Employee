@@ -1,19 +1,31 @@
-table {
-  border-collapse: collapse;
-  width: 540px;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+
+table{
+  /* border-collapse: collapse; */
+  border: none;
+  width: 600px;
+  
   /* background-image: url("./plain-dark-black-wall-with-wooden-floor-product-background.jpg"); */
   /* background: linear-gradient(45deg,rgb(0, 0, 0),rgb(37, 36, 36)); */
   background: transparent;
 
 }
+#act{
+  text-align: left;
+  
+}
 
 th, td {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
+  border: none;
   padding: 8px;
-  text-align: left;
+  font-size: large;
+  text-align: center;
   color: white;
   outline-offset: 4px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 .action{
   padding-left: 24%;
@@ -26,8 +38,10 @@ th, td {
 }
 
 th {
-  background-color: transparent;
-  color: white;
+  /* background-color: transparent;
+  color: white; */
+    
+  
 }
 
 button {
@@ -40,18 +54,23 @@ button {
   color: rgb(0, 0, 0);
   border: none;
   margin-left: 18%;
+  border-radius: 6px;
 }
 
 .edit-btn {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
+  margin-left: 7px;
+  border-radius: 6px;
 }
 
 .delete-btn {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
+  margin-left: 7px;
+  border-radius: 6px;
 }
 body{
   background-image:linear-gradient(rgba(0, 0, 0, 0.484),rgba(0, 0, 0, 0.484)), url("./group-people-working-out-business-plan-office.jpg");
@@ -61,5 +80,8 @@ body{
 .tablemain{
   margin-left: 29%;
   /* margin-bottom: 20%; */
+  background-color:rgba(0, 0, 0, 0.372) ;
+  padding: 15px;
   margin-top: 10%;
+  padding-bottom: 20px;
 }

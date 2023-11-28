@@ -36,7 +36,7 @@ const Home = () => {
       <tr>
         <th className='id'>User ID</th>
         <th className='username'>Username</th>
-        <th className='action'>Action</th>
+        <th className='action' id='act'>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -46,10 +46,10 @@ const Home = () => {
       <td>{data.Empid}</td>
       <td>{data.Name}</td>
       <td>
-       <Link to={`/view/${data._id}`}> <button class="view-btn"><FaEye /></button></Link>
+       <Link to={`/view/${data._id}`}> <button class="view-btn">View</button></Link>
       
-        <button class="delete-btn"><MdEdit /></button>
-        <Link to={`#${data._id}`} onClick={()=> deleteEmp(data._id)}><button class="edit-btn"><MdDelete /></button></Link>
+       <Link to={`/edit/${data._id}`}> <button class="edit-btn">Edit</button></Link>
+        <Link to={`#${data._id}`} onClick={()=> deleteEmp(data._id)}><button class="delete-btn">Delete</button></Link>
       </td>
     </tr>
       )
