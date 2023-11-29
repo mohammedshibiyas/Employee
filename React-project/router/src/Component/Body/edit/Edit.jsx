@@ -58,15 +58,17 @@ const Edit = () => {
             }
         })
     }
+
       // upload image
       const upload=async(e)=>{
-        Photo= await convertToBase64(e.target.files[0])
-        
+        let photo=""
+        Photo= await convertToBase64(e.target.files[0]) 
+        setval((pre)=>({...pre,Photo:Photo}))
       }
 
       const editEmploye=async(e)=>{
         e.preventDefault();
-        const res=await axios.patch(`http://localhost:3001/api/editemp/${id}`,{...val,Photo:Photo})
+        const res=await axios.patch(`http://localhost:3001/api/editemp/${id}`,{...val})
         if(res.status!=200){
          
           alert("data not editted")
